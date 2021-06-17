@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        starNewRound()
+        starNewGame()
     }
     
     func starNewRound() {
@@ -45,32 +45,51 @@ class ViewController: UIViewController {
     @IBAction func showAlert() {
         
         let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
+        var points = 100 - difference
         
+        // add these lines
+        let title: String
+        
+        if difference == 0 {
+            title = "Perfect!"
+            points += 100
+        } else if difference < 5 {
+            title = "You almost had it"
+            if difference == 1 {
+                points += 50
+            }
+        } else if difference < 10 {
+            title = "Pretty good"
+        } else {
+            title = "Not even close..."
+        }
         score += points
         
         let message = "You scored \(points) points"
         
-//        let message = " The target value is: \(targetValue)" + "\n The value of the slider is: \(currentValue)" + "\n The difference is: \(difference)"
-        
-        let alert = UIAlertController(title: "Hello World",
+        let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK",
                                    style: .default,
-                                   handler: nil)
+                                   handler: { _ in
+                                     self.starNewRound()
+                                   })
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
-        starNewRound()
     }
 
     @IBAction func sliderMoved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
     }
     
+    @IBAction func starNewGame() {
+        score = 0
+        round = 0
+        starNewRound()
+    }
     
 }
 

@@ -63,6 +63,9 @@
                                 <rect key="frame" x="20" y="325" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Statt Over"/>
+                                <connections>
+                                    <action selector="starNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFz-Rl-tXg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yV-pG-F1O">
                                 <rect key="frame" x="622" y="327" width="25" height="24"/>
