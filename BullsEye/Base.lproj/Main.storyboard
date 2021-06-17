@@ -101,6 +101,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="2td-5r-GPF" id="nxY-nH-Ras"/>
+                        <outlet property="scoreLabel" destination="imi-Rv-tfQ" id="gvU-B3-9G2"/>
                         <outlet property="slider" destination="DYT-Ug-6fY" id="qyO-3q-TkT"/>
                         <outlet property="targetLabel" destination="oz6-XC-NbH" id="h2r-qp-iRn"/>
                     </connections>
