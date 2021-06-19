@@ -14,6 +14,7 @@
 		DC69F70F267770BC00F88324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC69F70D267770BC00F88324 /* Main.storyboard */; };
 		DC69F711267770BD00F88324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC69F710267770BD00F88324 /* Assets.xcassets */; };
 		DC69F714267770BD00F88324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC69F712267770BD00F88324 /* LaunchScreen.storyboard */; };
+		DCED4191267DD45700682380 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = DCED4190267DD45700682380 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DC69F710267770BD00F88324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC69F713267770BD00F88324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC69F715267770BD00F88324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCED4190267DD45700682380 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		DC69F706267770BC00F88324 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				DCED4190267DD45700682380 /* BullsEye.html */,
 				DC69F707267770BC00F88324 /* AppDelegate.swift */,
 				DC69F709267770BC00F88324 /* SceneDelegate.swift */,
 				DC69F70B267770BC00F88324 /* ViewController.swift */,
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC69F714267770BD00F88324 /* LaunchScreen.storyboard in Resources */,
+				DCED4191267DD45700682380 /* BullsEye.html in Resources */,
 				DC69F711267770BD00F88324 /* Assets.xcassets in Resources */,
 				DC69F70F267770BC00F88324 /* Main.storyboard in Resources */,
 			);
