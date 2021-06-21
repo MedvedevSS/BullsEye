@@ -57,6 +57,8 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         
+        transition()
+        
         updateLabels()
     }
     
@@ -65,6 +67,16 @@ class ViewController: UIViewController {
         targetLabel.text = "\(targetValue)"
         scoreLabel.text = "\(score)"
         roundLabel.text = "\(round)"
+    }
+    
+    func transition() {
+        
+    let transition = CATransition()
+    transition.type = CATransitionType.fade
+    transition.duration = 1
+    transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+    view.layer.add(transition, forKey: nil)
+        
     }
     
     @IBAction func showAlert() {
